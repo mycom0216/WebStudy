@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 선택자의 종류 */
+
+        /* (1)전체 선택자 : 문서 내 모든 요소를 선택 
+            => * 기호를 사용
+        */
+
+        *{
+            font-family: '나눔스퀘어', '돋움';
+            color: green;
+        }
+
+        /* (2) 태그 선택자 : 특정 태그를 선택 
+            => 태그 이름을 사용
+        */
+
+        li{
+            color: red;
+        }
+
+
+        /* 선택자들을 구분해서 스타일 지정해줘야할 경우
+            예) 얘네만 묶어서 다르게 디자인하고싶은데?  (클래스)
+                얘만 단독으로 다르게 디자인하고싶은데? (아이디)
+
+            클래스 => 중복 가능, 재사용성 뛰어남
+            아이디 => 중복 불가능, 사용한 아이디는 한 문서당 1번만
+                    고유한 디자인 로고, 검색창, 상단바, footer ...
+        */
+
+        /* (3) 클래스 선택자 
+            => .클래스이름
+        */
+
+        .food{
+            color: darkblue;
+        }
+
+        /* (4) 아이디 선택자
+            => #아이디이름
+        */
+        #pick{
+            background-color: yellow;
+        }
+
+
+        /* 만약, 특정 태그에 입힌 class만 선택하고싶다면? 
+        원하는태그.클래스이름
+        */
+        h1.text{
+            color: hotpink;
+        }
+
+        /* 그룹 선택자 : 선택자1,선택자2,~*/
+        h2,h3{
+            background-color: lightblue;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <h2>h2태그</h2>
+    <h3>h3태그</h3>
+
+    <h1 class="text">CSS</h1>
+    <p class="text">웹페이지를 꾸며주는 스타일 시트 언어</p>
+    <ul>
+        <li>CSS 기본구조</li>
+        <li>CSS 선택자</li>
+        <li>CSS 스타일</li>
+    </ul>
+
+    <h1 class="food">오늘 뭐먹지?</h1>
+    <ul>
+        <li class="food" id="pick">연어</li>
+        <li class="food">삼겹살</li>
+        <li class="food">샐러드</li>
+    </ul>
+
+
+</body>
+</html>
